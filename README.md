@@ -2,10 +2,6 @@
 
 Multiple Unity Projects Mixed Reality Course 2019/2020
 
-# PongMr
-
-# SpaceInvaders
-
 # SmartFactory
 
 Mouse Controls:
