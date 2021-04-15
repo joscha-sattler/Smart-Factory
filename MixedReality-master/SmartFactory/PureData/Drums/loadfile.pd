@@ -1,0 +1,40 @@
+#N canvas -5 71 902 861 12;
+#X obj 17 11 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
+;
+#X msg 17 33 \; pd dsp \$1;
+#X msg 101 207 start;
+#X msg 72 268 stop;
+#X obj 434 497 env~;
+#X obj 476 497 env~;
+#X obj 437 569 vu 15 240 empty empty -1 -8 0 10 -66577 -1 1 0;
+#X obj 571 547 vu 15 480 empty empty -1 -8 0 10 -66577 -1 1 0;
+#X obj 434 530 -100;
+#X obj 476 531 -100;
+#X msg 155 207 open snaredmx.wav;
+#X obj 329 303 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 329 323 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 127 137 t b b;
+#X obj 74 192 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 150 275 readsf~;
+#X obj 337 697 outlet~;
+#X obj 115 169 delay 3;
+#X obj 127 31 inlet;
+#X connect 0 0 1 0;
+#X connect 2 0 15 0;
+#X connect 3 0 15 0;
+#X connect 4 0 8 0;
+#X connect 5 0 9 0;
+#X connect 8 0 6 0;
+#X connect 9 0 7 0;
+#X connect 10 0 15 0;
+#X connect 13 0 17 0;
+#X connect 13 1 10 0;
+#X connect 14 0 2 0;
+#X connect 15 0 4 0;
+#X connect 15 0 16 0;
+#X connect 15 1 11 0;
+#X connect 17 0 14 0;
+#X connect 18 0 13 0;

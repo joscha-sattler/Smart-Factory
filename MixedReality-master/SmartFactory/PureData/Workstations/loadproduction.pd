@@ -1,0 +1,16 @@
+#N canvas 255 50 655 522 12;
+#X obj 107 113 inlet;
+#X obj 107 230 sel 0 1 2;
+#X obj 117 301 outlet~;
+#X obj 106 168 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 17 11 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
+;
+#X msg 17 33 \; pd dsp \$1;
+#X connect 0 0 3 0;
+#X connect 1 0 2 0;
+#X connect 1 1 2 0;
+#X connect 1 2 2 0;
+#X connect 1 3 2 0;
+#X connect 3 0 1 0;
+#X connect 4 0 5 0;

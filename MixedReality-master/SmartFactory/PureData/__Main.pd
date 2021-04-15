@@ -1,0 +1,93 @@
+#N canvas 510 58 1260 858 12;
+#X obj 381 537 Bib/Stereots;
+#X obj 421 478 loadbang;
+#X msg 421 504 0.5;
+#X obj 502 522 hsl 128 15 0 1 0 0 empty empty Volume_Master 5 6 0 10
+-204800 -1 -1 0 1;
+#X text 481 479 für Stereo;
+#X obj 53 350 *~;
+#X obj 74 330 hsl 128 15 0 1 0 0 empty empty Volume_Kick 5 6 0 10 -86277
+-228856 -261234 0 1;
+#X obj 53 221 r Kick;
+#X obj 18 19 Bib/unityReceiveTs;
+#X obj 53 294 Drums/KickTomTR909Style;
+#X obj 383 306 Drums/loadfile;
+#X obj 381 367 *~;
+#X obj 402 347 hsl 128 15 0 1 0 0 empty empty Volume_Snare 5 6 0 10
+-4032 -1 -159808 0 1;
+#X obj 382 273 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 382 236 r Snare;
+#X obj 53 260 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 276 35 r Index;
+#X floatatom 276 59 5 0 0 0 - - -;
+#X obj 281 89 sel 0 1 2 3 4 5;
+#X obj 265 127 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 285 127 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 305 127 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 325 127 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 345 127 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 365 127 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 385 127 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 554 81 r Hier;
+#X floatatom 550 127 5 0 0 0 - - -;
+#X obj 673 216 r Building;
+#X obj 669 370 *~;
+#X obj 725 350 hsl 128 15 0 1 0 0 empty empty Volume_BuildingKick 5
+6 0 10 -203904 -1 -1 0 1;
+#X obj 674 297 Workstations/loadbuilding;
+#X text 710 320 hier werden noch wav-dateien geladen;
+#X obj 1013 240 r Work;
+#X obj 1013 319 Workstations/loadproduction;
+#X obj 1014 366 *~;
+#X obj 1064 347 hsl 128 15 0 1 0 0 empty empty Volume_Workproduction
+5 6 0 10 -232576 -1 -1 0 1;
+#X obj 1013 281 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 673 248 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 867 544 r Menu;
+#X obj 867 588 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X connect 1 0 2 0;
+#X connect 2 0 0 1;
+#X connect 3 0 0 2;
+#X connect 5 0 0 0;
+#X connect 6 0 5 1;
+#X connect 7 0 15 0;
+#X connect 9 0 5 0;
+#X connect 10 0 11 0;
+#X connect 11 0 0 0;
+#X connect 12 0 11 1;
+#X connect 13 0 10 0;
+#X connect 14 0 13 0;
+#X connect 15 0 9 0;
+#X connect 16 0 17 0;
+#X connect 17 0 18 0;
+#X connect 18 0 19 0;
+#X connect 18 1 20 0;
+#X connect 18 2 21 0;
+#X connect 18 3 22 0;
+#X connect 18 4 23 0;
+#X connect 18 5 24 0;
+#X connect 18 6 25 0;
+#X connect 26 0 27 0;
+#X connect 28 0 38 0;
+#X connect 29 0 0 0;
+#X connect 30 0 29 1;
+#X connect 31 0 29 0;
+#X connect 33 0 37 0;
+#X connect 34 0 35 0;
+#X connect 35 0 0 0;
+#X connect 36 0 35 1;
+#X connect 37 0 34 0;
+#X connect 38 0 31 0;
+#X connect 39 0 40 0;

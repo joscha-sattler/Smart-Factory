@@ -1,0 +1,59 @@
+#N canvas 984 151 450 300 12;
+#X obj 61 86 f;
+#X obj 110 86 + 1;
+#X obj 61 67 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 61 141 % 8;
+#X obj 61 236 bng 15 250 50 0 b1 empty empty 17 7 0 10 -261234 -260097
+-1;
+#X obj 83 236 bng 15 250 50 0 b2 empty empty 17 7 0 10 -262144 -1 -1
+;
+#X obj 103 236 bng 15 250 50 0 b3 empty empty 17 7 0 10 -204786 -4160
+-1;
+#X obj 123 236 bng 15 250 50 0 b4 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 151 236 bng 15 250 50 0 b5 empty empty 17 7 0 10 -261234 -260097
+-1;
+#X obj 173 236 bng 15 250 50 0 b6 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 193 236 bng 15 250 50 0 b7 empty empty 17 7 0 10 -204786 -4160
+-1;
+#X obj 213 236 bng 15 250 50 0 b8 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 61 42 r Beat;
+#X obj 61 266 bng 15 250 50 0 empty b1 empty 17 7 0 10 -261234 -260097
+-1;
+#X obj 83 266 bng 15 250 50 0 empty b2 empty 17 7 0 10 -262144 -1 -1
+;
+#X obj 103 266 bng 15 250 50 0 empty b3 empty 17 7 0 10 -204786 -4160
+-1;
+#X obj 123 266 bng 15 250 50 0 empty b4 empty 17 7 0 10 -262144 -1
+-1;
+#X obj 151 266 bng 15 250 50 0 empty b5 empty 17 7 0 10 -261234 -260097
+-1;
+#X obj 173 266 bng 15 250 50 0 empty b6 empty 17 7 0 10 -262144 -1
+-1;
+#X obj 193 266 bng 15 250 50 0 empty b7 empty 17 7 0 10 -204786 -4160
+-1;
+#X obj 213 266 bng 15 250 50 0 empty b8 empty 17 7 0 10 -262144 -1
+-1;
+#X floatatom 61 112 5 0 0 0 - - -;
+#X floatatom 61 167 5 0 0 0 - - -;
+#X obj 61 198 sel 0 1 2 3 4 5 6 7;
+#X text 223 196 selectiert den input;
+#X connect 0 0 1 0;
+#X connect 0 0 21 0;
+#X connect 1 0 0 1;
+#X connect 2 0 0 0;
+#X connect 3 0 22 0;
+#X connect 12 0 2 0;
+#X connect 21 0 3 0;
+#X connect 22 0 23 0;
+#X connect 23 0 4 0;
+#X connect 23 1 5 0;
+#X connect 23 2 6 0;
+#X connect 23 3 7 0;
+#X connect 23 4 8 0;
+#X connect 23 5 9 0;
+#X connect 23 6 10 0;
+#X connect 23 7 11 0;

@@ -1,0 +1,15 @@
+#N canvas 379 267 590 386 12;
+#X obj 45 27 loadbang;
+#X obj 45 85 netreceive -u -b;
+#X obj 45 109 oscparse;
+#X obj 53 134 print parse-output;
+#X msg 45 159 \; \$1 \$2, f 6;
+#X msg 45 57 listen 8008;
+#X text 141 58 Listen Port: 8008;
+#X text 220 114 -b flag: Binary Large Objects (BLOBs);
+#X text 220 89 -u UDP;
+#X connect 0 0 5 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 2 0 4 0;
+#X connect 5 0 1 0;
